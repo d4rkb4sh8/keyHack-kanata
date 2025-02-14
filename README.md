@@ -9,7 +9,7 @@
 - many options have been set to do a secondary action if the key is held down.
 - Switching between the layers the corresponding layer button only needs to be held.
 
-**There are 5 layers in all.**
+**ONE simple CONFIG FILE. There are 5 layers in all.**
 
 ### Layer 1 - Main use
 
