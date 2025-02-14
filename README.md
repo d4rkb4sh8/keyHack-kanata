@@ -1,10 +1,10 @@
-# keyHack-kanata 
+# keyHack-kanata
 
 ### Philosophy
 
 - Keep keyboard use simple and focused around the home row - so when one hand triggers a layer or an action the other triggers a shortcut
 - Incorporate VIM - arrow movements
-- Incorporate useful editing features 
+- Incorporate useful editing features
 - Incorporate Terminal shortcuts
 - many options have been set to do a secondary action if the key is held down.
 - Switching between the layers the corresponding layer button only needs to be held.
@@ -16,10 +16,9 @@
 - caps and esc key swapped
 - f1-f12 - control quake terminal dropdown, brightness, volume, screenshots, and swapping desktops left and right
 - Home Row Mods (reflective) - Shift, Meta, Alt, Ctrl and simply reflected on the right hand side Ctrl, Alt, Meta Shift
-- bspc/Del key to the left of the space bar 
+- bspc/Del key to the left of the space bar
 - return/Alt-grub key to the right of the space bar
 - Useful shortcuts for deleting a word  left/right
-    
 
 &nbsp;
 
@@ -42,22 +41,36 @@ With L2 held on your left hand
 with L3 held on your right hand
 
 - access all the SYMBOLS needed with your left hand
+  &nbsp;
+
+###  Layer 4 - Brackets
+
+with L4 held on your right hand
+
+- access all the BRACKETS needed with your left hand
+
 &nbsp;
+
+### Layer 5 - Numbers
+
+with L5 held on your left hand
+
+- access all the NUMBERS needed with your right hand
 
 ## Installation
 
 [](#)[](#installation)
 
-- To get keyHack, check out this repository with Git 
+- To get keyHack, check out this repository with Git
 - Launch `kanata.kbd` with Kanata.
-    - You can install Kanata by downloading a [pre-built executable](https://github.com/jtroo/kanata/releases).
-    - Follow the installation details of your operating system.
+  - You can install Kanata by downloading a [pre-built executable](https://github.com/jtroo/kanata/releases).
+  - Follow the installation details of your operating system.
 
 Windows
 
 Windows users might prefer to download the `kanata_winIOv2.exe` version as it fixes some weird bugs like C and V inversion.
 
-*Note: This tip has been tested for version 1.6.1 of Kanata. In later versions the `winIOv2` version might be the default.*
+_Note: This tip has been tested for version 1.6.1 of Kanata. In later versions the `winIOv2` version might be the default._
 
 Put the `kanata_winIOv2.exe` in the Kanata Arsenik folder, run it and you’re good to go!
 
@@ -159,7 +172,7 @@ As root, add the following content in `/Library/LaunchDaemons/org.pqrs.service.d
 </plist>
 ```
 
-A new item *Fumihiko Takayama* will be added in System Settings > Login Items.
+A new item _Fumihiko Takayama_ will be added in System Settings > Login Items.
 
 Two Karabiner processes should be started:
 
@@ -209,5 +222,4 @@ To start Kanata at the beginning of the session, add a property list file in `~/
 </plist>
 ```
 
-In system settings, search Login Items menu and select `sudo` service in *Allow in the Background* list. You can restart Kanata with new configuration by disabling and enabling this service.
-
+In system settings, search Login Items menu and select `sudo` service in _Allow in the Background_ list. You can restart Kanata with new configuration by disabling and enabling this service.
