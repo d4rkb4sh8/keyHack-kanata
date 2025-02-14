@@ -9,9 +9,11 @@
 - many options have been set to do a secondary action if the key is held down.
 - Switching between the layers the corresponding layer button only needs to be held.
 
-**ONE simple CONFIG FILE. There are 5 layers in all.**
+**There are 5 layers in all.**
 
 ### Layer 1 - Main use
+
+![layer_one.png](:/3762355be46b4e44a8fc290e257cd8f7)
 
 - caps and esc key swapped
 - f1-f12 - control quake terminal dropdown, brightness, volume, screenshots, and swapping desktops left and right
@@ -24,6 +26,9 @@
 
 ### Layer 2 - Navigation with text in the the terminal
 
+![layer_two.png](:/0a8e0d18da7f4d62bba11e616454bd4e)
+
+&nbsp;
 With L2 held on your left hand
 
 - Access useful terminal shortcuts and also use combination keys
@@ -38,12 +43,17 @@ With L2 held on your left hand
 
 ### Layer 3 - Symbols layer
 
+![layer_three.png](:/c5ff8b52959d4be087ec59445bc6c71e)
+
 with L3 held on your right hand
 
 - access all the SYMBOLS needed with your left hand
-  &nbsp;
 
-###  Layer 4 - Brackets
+&nbsp;
+
+### Layer 4 - Brackets
+
+![layer_four.png](:/eef63a02758343cf8f2793645477b620)
 
 with L4 held on your right hand
 
@@ -53,9 +63,13 @@ with L4 held on your right hand
 
 ### Layer 5 - Numbers
 
+![layer_five.png](:/c5ea8e16814e473aaba7fa5f549b2ae9)
+
 with L5 held on your left hand
 
 - access all the NUMBERS needed with your right hand
+
+&nbsp;
 
 ## Installation of KANATA
 

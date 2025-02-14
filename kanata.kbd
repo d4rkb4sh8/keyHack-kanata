@@ -90,7 +90,7 @@
   grv  1    2    3     4    5    6    7    8    9    0    -    =    bspc
   tab  S-1  S-2  S-3   S-4  _    _    _    _    _    p    _    _    \
   esc  S-5  S-6  S-7   S-8  _    _    _    _    _    ;    '    ret
-  lsft -    S-=  S--   S-=  S-]  n    m    _    _    /    rsft
+  lsft -    S-=  S--   =    grv  n    m    _    _    /    rsft
   _    _    _           spc                _    _    _
 )
 
@@ -100,7 +100,7 @@
   grv  1    2    3     4    5    6    7    8    9    0    -    =    bspc
   tab  S-9  S-0  [     ]    _    _    _    _    _    p    _    _    \
   esc  S-[  S-]  S-,   S-.  _    _    _    _    _    ;    '    ret
-  lsft ;    S-;  '     S-'  grv  \    /    _    _    /    rsft
+  lsft ;    S-;  '     S-'  \    /    S-\  _    _    /    rsft
   _    _    _           spc                _    _    _
 ) 
 
@@ -114,5 +114,5 @@
   _    _    _           spc               _    _    _
 )
 
-;; lrld is a default shortcut to reload the configuration 
+;; lrld is a default shortcut to reload the configuration found on layer 3 and 4 in place of f12 
 
