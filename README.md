@@ -57,11 +57,11 @@ with L5 held on your left hand
 
 - access all the NUMBERS needed with your right hand
 
-## Installation
+## Installation of KANATA
 
 [](#)[](#installation)
 
-- To get keyHack, check out this repository with Git
+- To get keyHack, check out this repository with Git. Download the kanata.kbd to get started. to install Kanata follow the instructions below.
 - Launch `kanata.kbd` with Kanata.
   - You can install Kanata by downloading a [pre-built executable](https://github.com/jtroo/kanata/releases).
   - Follow the installation details of your operating system.
