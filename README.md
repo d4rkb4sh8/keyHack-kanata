@@ -1,129 +1,89 @@
-# keyHack-kanata
+# keyHack Kanata Custom Layout 
+**Tap/Hold Time**: 200ms  
 
-### Philosophy
+---
 
-- Keep keyboard use simple and focused around the home row - so when one hand triggers a layer or an action the other triggers a shortcut
-- Incorporate VIM - arrow movements
-- Incorporate useful editing features
-- Incorporate Terminal shortcuts
-- many options have been set to do a secondary action if the key is held down.
-- Switching between the layers the corresponding layer button only needs to be held.
+## **Base Layer (Default)**  
+**Toggle Keys**: Hold `Left Win` (Layer 2), `Right Win` (Layer 3), `Right Ctrl` (Layer 4).  
 
-**There are 4 layers in all.**
+```  
+[Esc/`]  F1   F2   F3   F4   F5   F6   F7   F8   F9   F10  F11  F12  
+`~   1    2    3    4    5    6    7    8    9    0    -    =    [Backspace/Del]  
+Tab  Q    W    E    R    T    [Y/Home]  [U/PgDn]  [I/PgUp]  [O/End]  P    [ [/WordDel]  [ ]/LineDel]  \|  
+[Caps/;]  [A/Ctrl+A]  [S/Win]  [D/Alt]  [F/Ctrl]  G    [H/`~]  [J/Ctrl]  [K/Alt]  [L/Win]  ;    '    [Enter/Alt]  
+Shift  [Z/Undo]  [X/Cut]  [C/Copy]  [V/Paste]  B    N    M    [,/WordBspc]  [./WordDel]  /    Shift  
+Ctrl   [Win/Layer2]  [Alt]         [Space]         [Alt]  [Win/Layer3]  [Ctrl/Layer4]  
+```  
 
-### Layer 1 - Main use
+**Key Modifications**:  
+- `A`: Tap = `a`, **Hold = `Ctrl+A`** (select all text).  
+- `S/D/F`: Tap = `s/d/f`, Hold = **Left Win/Alt/Ctrl**.  
+- `H/J/K/L`: Tap = `h/j/k/l`, Hold = **`~, Right Ctrl/Alt/Win**.  
+- `Y/U/I/O`: Navigate **Home/PgDn/PgUp/End** on hold.  
+- `Z/X/C/V`: **Undo/Cut/Copy/Paste** on hold.  
+- `;` **is static** (no hold function; outputs `;` only).  
 
-![layer_one.png](./layers_layout/layer_one.png)
+---
+## **Layer 2 (Navigation/Media)**  
+**Activation**: Hold `Left Win`.  
 
-- caps and esc key swapped
-- f1-f12 - control quake terminal dropdown, brightness, volume, screenshots, and swapping desktops left and right
-- Home Row Mods (reflective) - Shift, Meta, Alt, Ctrl and simply reflected on the right hand side Ctrl, Alt, Meta Shift
-- bspc/Del key to the left of the space bar
-- return/Alt-grub key to the right of the space bar
-- Useful shortcuts for deleting a word  left/right
+```  
+[Esc/`]  [Quake]  [Arc_Menu]  [BrightDown]  [BrightUp]  [Mute]  [Vol-]  [Vol+]  [Mic]  [Screenshot]  [LockScreen] [LayoutL]  [LayoutR]  
+`~   1    2    3    4    5    6    7    8    9    0    -    =    [Backspace]  
+Tab  Q    W    E    R    T    [🖱️←]  [🖱️↓]  [🖱️↑]  [🖱️→]  P    [LineBspc]  [LineDel]  \|  
+[Caps]  _    _    _    _    G    ←    ↓    ↑    →    [Bspc]  [Del]  [Enter]  
+Shift  _    _    _    _    B    [N/0]  [M/$]  [,/Undo]  [./Redo]  /    Shift  
+_      _         [Space]         _      _      _  
+```  
 
-&nbsp;
+**Key Modifications**:  
+- `Y/U/I/O`: Mouse wheel **←/↓/↑/→**.  
+- `H/J/K/L`: Arrow keys.  
+- Media: `F5-F8` control **mute/volume/mic**.  
+- `N/M`: Tap for `0/$`, hold for clipboard actions.  
 
-### Layer 2 - Navigation with text in the the terminal
+---
 
-![layer_two.png](./layers_layout/layer_two.png)
-&nbsp;
-With L2 held on your left hand
+## **Layer 3 (Symbols)**  
+**Activation**: Hold `Right Win`.  
 
-- Access useful terminal shortcuts and also use combination keys
-- VIM HJKL used to control arrow movement when moving the cursor
-- VIM - go to the beginning of the line with n when held equivalent of hitting 0
-- VIM - got to the end of the line with m when held equivalent of hitting $
-- Useful shortcuts for deleting a word from the terminal left/right
-- delete the line before/after the cursor in the terminal
-- Select all, undo, cut, copy and paste
+```  
+[Esc/`]  F1   F2   F3   F4   F5   F6   F7   F8   F9   F10  F11  [Reload]  
+`~   1    2    3    4    5    6    7    8    9    0    -    =    [Backspace]  
+Tab  !    @    #    $    _    _    _    _    _    P    _    _    \|  
+[Caps]  %    ^    &    *    _    _    _    _    _    ;    '    [Enter]  
+Shift  -    +=   -=   =    `~    N    M    _    _    /    Shift  
+_      _         [Space]         _      _      _  
+```  
 
-&nbsp;
+**Key Modifications**:  
+- `Q/W/E/R`: **! @ # $** (shifted 1-4).  
+- `A/S/D/F`: **% ^ & *** (shifted 5-8).  
+- `Z/X/C/V`: **- += -= =**.  
 
-### Layer 3 - Symbols layer
+---
 
-![layer_three.png](./layers_layout/layer_three.png)
+## **Layer 4 (Brackets)**  
+**Activation**: Hold `Right Ctrl`.  
 
-with L3 held on your right hand
+```  
+[Esc/`]  F1   F2   F3   F4   F5   F6   F7   F8   F9   F10  F11  F12  
+`~   1    2    3    4    5    6    7    8    9    0    -    =    [Backspace]  
+Tab  {    }    [    ]    _    _    _    _    _    P    _    _    \|  
+[Caps]  (    )    <    >    _    _    _    _    _    ;    '    [Enter]  
+Shift  :    ;    "    '    \    /    |    _    _    /    Shift  
+_      _         [Space]         _      _      _  
+```  
 
-- access all the SYMBOLS needed with your left hand
+**Key Modifications**:  
+- `Q/W/E`: **{ } [ ] ( )**.  
+- `A/S/D/F`: **[ ] < >** (shifted).  
+- `Z/X/C/V`: **: ; " '**.  
 
-&nbsp;
+---
 
-### Layer 4 - Brackets
+### **General Notes**  
+- **Vim-Style Navigation**: Layer 2 mirrors Vim’s `HJKL` arrows.  
+- **Layer Exits**: Release the toggle key (e.g., `Left Win`) to return to the base layer.  
+- **Clipboard Actions**: Use `,/.` for word deletion and `[/]` for line editing.  
 
-![layer_four.png](./layers_layout/layer_four.png)
-
-with L4 held on your right hand
-
-- access all the BRACKETS needed with your left hand
-
-&nbsp;
-
-[](#)[](#installation)
-
-- To get keyHack, check out this repository with Git. Download the kanata.kbd to get started. to install Kanata follow the instructions below.
-- Launch `kanata.kbd` with Kanata.
-  - You can install Kanata by downloading a [pre-built executable](https://github.com/jtroo/kanata/releases).
-  - Follow the installation details of your operating system.
-
-LINUX
-
-### Run Kanata without `sudo`
-
-[](#)[](#run-kanata-without-sudo)
-
-kanata needs to intercept `uinput` signals, which it cannot do without the proper authorisations.
-
-If you don’t want to run `kanata` with `sudo`, you’ll need to allow Kanata to read from `uinput`. This requires the users to be part of both `input` and `uinput` groups.
-
-For that, you first need to create a `uinput` group if it doesn’t exist yet:
-
-```shell
-sudo groupadd -U $USERNAME uinput
-```
-
-where `$USERNAME` is the target user (or users in a comma-separated list). Then add the target user (or users) to the group input:
-
-```shell
-sudo usermod -aG input $USERNAME
-```
-
-You can check after re-logging that both groups appear in the result of the `groups` command launched as the target user.
-
-Finally, you need to add a udev rule in `/etc/udev/rules.d/50-kanata.rules`:
-
-```
-KERNEL=="uinput", MODE="0660", GROUP="uinput", OPTIONS+="static_node=uinput"
-```
-
-### Making a user-side `systemd` service for Kanata
-
-[](#)[](#making-a-user-side-systemd-service-for-kanata)
-
-Note: This only works if `kanata` is able to run without `sudo` (and is using `systemd`).
-
-Using a `systemd service` allows running `kanata` as a daemon, possibly right after logging in. Here is a template for a service file:
-
-```
-[Unit]
-Description=Kanata keyboard remapper
-Documentation=https://github.com/jtroo/kanata
-
-[Service]
-Environment=PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin
-Environment=DISPLAY=:0
-Environment=HOME=/path/to/home/folder
-Type=simple
-ExecStart=/usr/local/bin/kanata --cfg /path/to/kanata/config/file
-Restart=no
-
-[Install]
-WantedBy=default.target
-```
-
-Copy-paste it into `~/.config/systemd/user/kanata.service`, fill in the placeholders, then run one of the following commands:
-
-- `systemctl --user start kanata.service` to manually start `kanata`
-- `systemctl --user enable kanata.service` so `kanata` may autostart whenever the current user logs in
-- `systemctl --user status kanata.service` to check if `kanata` is running
