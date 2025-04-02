@@ -32,10 +32,6 @@
   ar (tap-hold $tap-time $hold-time ; rsft)
   capm (tap-hold $tap-time $hold-time esc grv)
   escm  (tap-hold $tap-time $hold-time caps scln)
-  l5 (tap-hold $tap-time $hold-time lctl (layer-toggle five))
-  l4 (tap-hold $tap-time $hold-time rctl (layer-toggle four))
-  l2 (tap-hold $tap-time $hold-time lmet (layer-toggle two))
-  l3 (tap-hold $tap-time $hold-time rmet (layer-toggle three))
   la (tap-hold $tap-time $hold-time bspc del)
   ra (tap-hold $tap-time $hold-time ret ralt)
   yy (tap-hold $tap-time $hold-time y home) 
@@ -55,40 +51,50 @@
   dwf (tap-hold $tap-time $hold-time . C-del)
   nn (tap-hold $tap-time $hold-time n 0)
   mm (tap-hold $tap-time $hold-time m S-4)
-  dsb (tap-hold $tap-time $hold-time C-M-down C-M-down)
+  l2 (tap-hold $tap-time $hold-time lmet (layer-toggle two))   
+  l3 (tap-hold $tap-time $hold-time rmet (layer-toggle three)) 
+  l4 (tap-hold $tap-time $hold-time rctl (layer-toggle four))
+  qtd (tap-hold $tap-time $hold-time C-A-q C-A-q)
+  pum (tap-hold $tap-time $hold-time A-f2 A-f2)
+  dsb (tap-hold $tap-time $hold-time C-M-down C-M-down) 
   isb (tap-hold $tap-time $hold-time C-M-up C-M-up)
-  psc (tap-hold $tap-time $hold-time S-C-5 S-C-5)
-  qtd (tap-hold $tap-time $hold-time A-M-q A-M-q)
-  dsl (tap-hold $tap-time $hold-time A-C-left A-C-left)
-  dsr (tap-hold $tap-time $hold-time A-C-rght A-C-rght)
-  lts (tap-hold $tap-time $hold-time M-A-C-l M-A-C-l)
+  mut (tap-hold $tap-time $hold-time A-f5 A-f5)
+  vdn (tap-hold $tap-time $hold-time A-f6 A-f6)
+  vup (tap-hold $tap-time $hold-time A-f7 A-f7)
+  mic (tap-hold $tap-time $hold-time A-f8 A-f8)
+  psc (tap-hold $tap-time $hold-time A-f9 A-f9)
+  lts (tap-hold $tap-time $hold-time C-A-M-l C-A-M-l)
+  dsl (tap-hold $tap-time $hold-time A-f11 A-f11)
+  dsr (tap-hold $tap-time $hold-time A-f12 A-f12)
   bdl (tap-hold $tap-time $hold-time [ C-bspc)
   fdl (tap-hold $tap-time $hold-time ] S-C-del)
-  mwu (mwheel-up 50 120)
+  mwl (mwheel-left 50 120)
   mwd (mwheel-down 50 120)
+  mwu (mwheel-up 50 120)
+  mwr (mwheel-right 50 120)
 )
 
 ;; LAYER ONE - main mods
 (deflayer one
-  caps @qtd f2  @dsb  @isb f5   f6   f7   f8   @psc @lts @dsl @dsr 
-  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
-  tab  q    w    e    r    t    y    u    i    o    p    @bdl @fdl \
-  esc  @al  @ss  @dd  @ff  g    @hh  @jj  @kk  @ll  @ar  '    ret
-  lsft z    x    c    v    b    n    m    @dwb @dwf /    rsft
-  @l5 @l2  @la           spc              @ra  @l3  @l4
-)
-
-;; Navigation layer  
-(deflayer two 
   caps f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
-  tab  q    w    e    r    t    @yy  @uu  @ii  @oo  p    @dtb @dte \
-  esc  @aa  _    _    _    g    left down up   rght @mwd @mwu ret
-  lsft @zz  @xx  @cc  @vv  b    @nn  @mm  @tbd @tfd /    rsft
+  tab  q    w    e    r    t    @yy  @uu  @ii  @oo  p    @bdl @fdl \
+  esc  @aa  @ss  @dd  @ff  g    @hh  @jj  @kk  @ll  ;    '    ret
+  lsft @zz  @xx  @cc  @vv  b    n    m    @dwb @dwf /    rsft
+  lctl @l2  @la           spc              @ra  @l3  @l4
+)
+
+;; Navigation layer - left hand on left win/super/cmd key  
+(deflayer two 
+  caps @qtd @pum @dsb @isb @mut @vdn @vup @mic @psc @lts @dsl @dsr
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    @mwl @mwd @mwu @mwr p    @dtb @dte \
+  esc  _    _    _    _    g    left down up   rght bspc del  ret
+  lsft _    _    _    _    b    @nn  @mm  @tbd @tfd /    rsft
   _    _    _           spc               _    _    _
 )
 
-;; Symbols layer 
+;; Symbols layer - right hand on right win/super/cmd key 
 (deflayer three 
   caps f1   f2   f3    f4   f5   f6   f7   f8   f9   f10  f11  lrld
   grv  1    2    3     4    5    6    7    8    9    0    -    =    bspc
@@ -98,9 +104,9 @@
   _    _    _           spc                _    _    _
 )
 
-;; Brackets layer 
+;; Brackets layer - right hand on right ctrl key 
 (deflayer four 
-  caps f1   f2   f3    f4   f5   f6   f7   f8   f9   f10  f11  lrld
+  caps f1   f2   f3    f4   f5   f6   f7   f8   f9   f10  f11  f12
   grv  1    2    3     4    5    6    7    8    9    0    -    =    bspc
   tab  S-9  S-0  [     ]    _    _    _    _    _    p    _    _    \
   esc  S-[  S-]  S-,   S-.  _    _    _    _    _    ;    '    ret
@@ -108,15 +114,6 @@
   _    _    _           spc                _    _    _
 ) 
 
-;; Numbers Layer
-(deflayer five 
-  caps f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12 
-  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
-  tab  q    w    e    r    t    y    1    2    3    p    _    _    \
-  esc  a    @ss  @dd  @ff  g    @hh  4    5    6    ;    '    ret
-  lsft z    x    c    v    b    7    8    9    0    /    rsft
-  _    _    _           spc               _    _    _
-)
 
-;; lrld is a default shortcut to reload the configuration found on layer 3 and 4 in place of f12 
+;; lrld is a default shortcut to reload the configuration found on layer 3 in place of f12 
 

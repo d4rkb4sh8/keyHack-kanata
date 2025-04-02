@@ -9,7 +9,7 @@
 - many options have been set to do a secondary action if the key is held down.
 - Switching between the layers the corresponding layer button only needs to be held.
 
-**There are 5 layers in all.**
+**There are 4 layers in all.**
 
 ### Layer 1 - Main use
 
@@ -59,18 +59,6 @@ with L4 held on your right hand
 - access all the BRACKETS needed with your left hand
 
 &nbsp;
-
-### Layer 5 - Numbers
-
-![layer_five.png](./layers_layout/layer_five.png)
-
-with L5 held on your left hand
-
-- access all the NUMBERS needed with your right hand
-
-&nbsp;
-
-## Installation of KANATA
 
 [](#)[](#installation)
 
